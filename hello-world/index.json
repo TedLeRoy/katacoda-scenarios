@@ -1,6 +1,6 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Key based authentication SSH",
+  "description": "Configure key based authentication for SSH on Ubuntu",
   "difficulty": "beginner",
   "time": "2 minutes",
   "details": {
