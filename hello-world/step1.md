@@ -6,7 +6,6 @@ We'll add a user, _bob_ to Terminal 1 with the **adduser** command.
 
 `adduser bob`{{execute T1}}
 
-'''
 You'll see the following:
 Adding user 'bob' ...
 Adding new group 'bob' (1001) ...
@@ -24,6 +23,5 @@ Enter the new value, or press ENTER for the default
         Home Phone []: **press Enter**
         Other []: **press Enter**
 Is the information correct? [Y/n] **press Enter**
-'''
 
 Your user, _bob_ will have been created on Terminal 1.
