@@ -1,4 +1,4 @@
-This is your first step.
+Adding a user to Terminal 1.
 
 ## Task
 
