@@ -26,3 +26,7 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n] **press Enter**`
 
 Your user, _bob_ has been created on Terminal 1.
+
+Change from running as _root_ to run as _bob_ using the substitute user identity _su_ command.
+
+`su - bob`{{execute T1}}
