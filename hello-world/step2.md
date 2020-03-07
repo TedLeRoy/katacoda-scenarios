@@ -1,7 +1,9 @@
-Adding a user to Terminal 1.
+Run ssh-keygen for bob.
 
 ## Task
 
-Change from running as _root_ to run as _bob_ using the substitute user identity _su_ command.
+Running ssh-keygen will do several things for us. It will add a hidden directory to bob's home called .ssh, it will generate a public/private key pair and put them in the .ssh folder, and it will set proper permissions (700 for the directory, and 600 for the files) on those resources.
 
-`su - bob`{{execute T1}}
+`ssh-keygen`{{execute T1}}
+
+You'll see the following output:
