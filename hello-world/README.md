@@ -1,25 +1,46 @@
-# Katacoda Hello World
-This is an example repository. Starting building your own scenario by editing the files in this directory. Create additional scenarios by adding additional directories to the top level folder.
+#SSH key-based authentication
 
+##Welcome to the SSH key-based authentication for Ubuntu 18.04 Server scenario!
 
-## index.json
-The file _index.json_ contains all the information about the scenario. It has the title, description and a heading for each step.
+###Problem
 
-The file also contains an imageid. This refers to the Katacoda environment. Here are some environment image IDs you may find useful:
+SSH is a secure, encrypted protocol for managing remote devices such as Linux and BSD servers and network devices like those made by Cisco and Juniper.
 
-| **Environment**  | **Image ID**  |
-|------------------|---------------|
-| Docker           | docker        |
-| Kubernetes       | kubernetes    |
-| CoreOS           | coreos        |
-| Node.js v6       | node6         |
-| Go               | go            |
-| C#               | c#            |
-| Java             | java8         |
-| Bash             | bash          |
+In a default installation on Linux, it uses username and password for authentication.
 
-## Pro Author Accounts
-Interested in metrics, private repositories and environments for classroom teaching? Update to become a Pro Author at https://katacoda.com/teach
+This is a very insecure way to manage remote authentication and a better option is available to us with just a few steps.
 
-## Interactive Developer Portals
-Want to take your scenarios to the next level? Visit https://katacoda.com/embed
+###Solution
+
+Key-based authentication uses a public key and a private key. Only the public key is exposed and it is useless for authentication without the corresponding private key.
+
+Key-based authentication is much more secure in that the keys generated are nearly impossible to guess, and without them, once you're set up, an attacker won't be able to log in.
+
+If you've never configured key-based authentication for SSH it can be a little confusing.
+
+We'll walk through the process, step-by-step, together here.
+
+###Discussion
+
+The steps to configure key-based authentication are highlighted below and we'll do each in this scenario:
+
+1. Create a non-root user on system one with `adduser`.
+2. Add the new user to the _sudo_ group with `usermod`.
+3. Switch from root to the new user with `su`.
+4. Generate a key pair for the new user with `ssh-keygen`.
+5. Print the key to the terminal or standard output with `cat`.
+6. Create a non-root user on the second system with the same username with `adduser`.
+7. Add the new user on system two to the _sudo_ group with `usermod`.
+6. Switch from root to the new user with `su`.
+7. Set up directories for keys with `ssh-keygen`.
+8. Copy the key on system 1 to the _authorized_keys_ file on system 2 with `echo`.
+9. Set permissions on the _authorized_keys_ file to 600 using `chmod`.
+10. Test key-based authentication from system one to system two with `ip` and `ssh`.
+11. Set system two so it will only accept key-based authentication by editing _/etc/ssh/sshd_config_ with `vim`.
+12. Reload the ssh service with `service`.
+13. Make sure key-based authentication from system one to system two still works with `ssh`.
+14. Make sure privilege elevation still works with `sudo`.
+15. Make sure password authentication no longer works by disabling your key and trying to log in.
+16. Understand what logs to check for any issues along the way.
+
+This sounds like a lot but we'll get through it pretty quickly!
