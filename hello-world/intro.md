@@ -1,6 +1,6 @@
 <h1>SSH key-based authentication</h1>
 
-<h2>Welcome to the SSH key-based authentication for Ubuntu scenario!</h2>
+<h2>Welcome to the SSH key-based authentication for Ubuntu 18.04 Server scenario!</h2>
 
 SSH is a secure, encrypted protocol for managing remote devices such as Linux and BSD servers and network devices like those made by Cisco and Juniper.
 
