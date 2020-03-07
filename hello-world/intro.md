@@ -1,1 +1,1 @@
-Welcome to your first Katacoda Scenario!
+Welcome to the SSH key-based authentication for Ubuntu scenario!
