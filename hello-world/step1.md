@@ -1,6 +1,6 @@
 Creating a user, _bob_ on terminal 1.
 
-## Add user _bob_ on terminal 1.
+## Add user _bob_ on terminal 1.
 
 We'll add a user, _bob_ to Terminal 1 with the `adduser` command.
 
