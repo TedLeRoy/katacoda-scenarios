@@ -1,6 +1,6 @@
-Creating a user, _bob_ on terminal 1.
+# Creating a user, _bob_ on terminal 1.
 
-## Add user _bob_ on terminal 1.
+### Add user _bob_ on terminal 1.
 
 We'll add a user, _bob_ to Terminal 1 with the `adduser` command.
 
@@ -27,13 +27,13 @@ Is the information correct? [Y/n] **press Enter**`
 
 Your user, _bob_ has been created on Terminal 1.
 
-## Add privilege elevation to _bob's_ account
+### Add privilege elevation to _bob's_ account
 
 Add _bob_ to the sudo group so he can elevate privileges when needed with `usermod`.
 
 `usermod -aG sudo bob`{{execute T1}}
 
-## Change from _root_ to _bob_
+### Change from _root_ to _bob_
 
 Change from running as _root_ to run as _bob_ using the substitute user identity `su` command.
 
