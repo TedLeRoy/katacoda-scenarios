@@ -10,7 +10,7 @@ You'll see the following output:
 
 `bob@host01:~$ ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/bob/.ssh/id_rsa):
+Enter file in which to save the key (/home/bob/.ssh/id_rsa): **Press Enter**
 Created directory '/home/bob/.ssh'.
 Enter passphrase (empty for no passphrase): **Enter passphrase**
 Enter same passphrase again: **Enter passphrase**
