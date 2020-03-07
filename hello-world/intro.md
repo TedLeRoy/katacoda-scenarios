@@ -1,8 +1,8 @@
-#SSH key-based authentication
+# SSH key-based authentication
 
-##Welcome to the SSH key-based authentication for Ubuntu 18.04 Server scenario!
+## Welcome to the SSH key-based authentication for Ubuntu 18.04 Server scenario!
 
-###Problem
+### Problem
 
 SSH is a secure, encrypted protocol for managing remote devices such as Linux and BSD servers and network devices like those made by Cisco and Juniper.
 
@@ -10,7 +10,7 @@ In a default installation on Linux, it uses username and password for authentica
 
 This is a very insecure way to manage remote authentication and a better option is available to us with just a few steps.
 
-###Solution
+### Solution
 
 Key-based authentication uses a public key and a private key. Only the public key is exposed and it is useless for authentication without the corresponding private key.
 
@@ -20,7 +20,7 @@ If you've never configured key-based authentication for SSH it can be a little c
 
 We'll walk through the process, step-by-step, together here.
 
-###Discussion
+### Discussion
 
 The steps to configure key-based authentication are highlighted below and we'll do each in this scenario:
 
