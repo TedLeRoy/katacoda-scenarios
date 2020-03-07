@@ -2,6 +2,6 @@ This is your first step.
 
 ## Task
 
-This is an _example_ of creating a scenario and running a **command**
+We'll add a user, _bob_ to Terminal 2 with the **adduser** command.
 
-`echo 'Hello World'`{{execute}}
+`adduser bob`{{execute T2}}
