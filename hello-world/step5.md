@@ -4,7 +4,7 @@
 
 Now that we've configured the keys, let's make sure they work.
 
-`ssh [[IP T2]]`{{execute T1}}
+`ssh bob@[[HOST2_IP]]`{{execute T1}}
 
 You'll be prompted to enter the password you used to protect your key.
 
