@@ -31,6 +31,24 @@ The key's randomart image is:
 |            .... |
 +----[SHA256]-----+`
 
-Now, we want to see the content of the id_rsa.pub file so we can select and copy it to system two in a later step:
+Now, we want to copy the content of id_rsa.pub on Terminal 1 to the authorized_keys file in the .ssh folder on this system.
 
-`cat /home/bob/.ssh/id_rsa.pub`{{execute T2}}
+On Terminal 1, select the text that was output when the cat command was run. It will look something like this: 
+
+`ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCostLDIrveyujCUMuJkO42ifDEG7FMhAPEKJmX8dXIUavZiccLUgnf1X9syMR7YYzWdpz9GXI62Va/z5zW8ITRaOWHsJ18h+MpDfk+9qBEeiBydLFo0rzSSJDmZTpbLVOpkQ2LYgSy0eouPtNTFRvaRLXjaQb01WCMneXMmun33w1CvNgOEWQb/d4iUO2ylKz20CvacfwctKgjROG3ZDtgv9D0S6+xCsx7gEOMVcuVxaA58NH5b9p55qNue9DNT3l4oNRPJQ5MY+HyQp3YZoTb3eesyhz+/WALyR7XQ29QhGNTu9RMkpQl/IB6YrTNHX7jpp2humRfzTzx0m1JDjgt bob@host01`
+
+Be sure to select everything from ssh-rsa... to ...bob@host01.
+
+Hit ctrl-c to copy your selection to your operating system's clipboard.
+
+Type echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys.
+
+Be sure to have single quotes around the key.
+
+This will create an authorized_keys file if it does not already exist and add the key from Terminal 1 to it, or append it to existing content if the file already exists.
+
+Now, change directory to your .ssh folder then change the permissions on the authorized_keys file to 600.
+
+`cd /home/bob/.ssh`{{execute T2}}
+
+`chmod 600 authorized_keys`{{execute T2}}
