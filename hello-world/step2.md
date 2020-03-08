@@ -33,4 +33,4 @@ The key's randomart image is:
 
 Now, we want to see the content of the id_rsa.pub file so we can select and copy it to system two in a later step:
 
-`cat \home\bob\.ssh\id_rsa.pub`{{execute T1}}
+`cat /home/bob/.ssh/id_rsa.pub`{{execute T1}}
