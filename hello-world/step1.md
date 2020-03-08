@@ -4,11 +4,13 @@
 
 We'll add a user, _bob_ to Terminal 1 with the `adduser` command.
 
-**Click on the code snippet below to execute it on Terminal Host 1**
+**Click on the code snippet below to execute it on Terminal Host 1.**
 
 `adduser bob`{{execute T1}}
 
-**Click in the Terminal Host 1 window to the right**
+**Click in the Terminal Host 1 window to the right.**
+
+**Provide the requested input where you see double asterisks `**` in the output as below.**
 
 You'll see the following:
 
