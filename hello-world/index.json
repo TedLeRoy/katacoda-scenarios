@@ -11,6 +11,10 @@
     {
       "title": "Step 2 - Generate SSH key",
       "text": "step2.md"
+    },    
+    {
+      "title": "Step 10 - List IP's",
+      "text": "step10.md"
     }],
     "intro": {
       "text": "intro.md",
