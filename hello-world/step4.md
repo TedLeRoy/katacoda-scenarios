@@ -43,7 +43,7 @@ Hit ctrl-c to copy your selection to your operating system's clipboard.
 
 Type `echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys`.
 
-Be sure to have single quotes around the key.
+Be sure to have single quotes around the key. Do not type the less than and greater than signs between the single quotes. The only thing inside the signle quotes should be the exact content of the key generated on Terminal 1.
 
 This will create an `authorized_keys` file if it does not already exist and add the key from Terminal 1 to it, or append it to existing content if the file already exists.
 
