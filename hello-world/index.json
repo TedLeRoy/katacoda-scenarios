@@ -16,6 +16,10 @@
       "title": "Step 3 - Add User - System Two",
       "text": "step3.md"
     },
+      {
+      "title": "Step 4 - Generate SSH key - System Two",
+      "text": "step4.md"
+    },
     {
       "title": "Step 10 - List IP's",
       "text": "step10.md"
