@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Add User - System One",
       "text": "step1.md"
     },
     {
-      "title": "Step 2 - Run Command",
+      "title": "Step 2 - Generate SSH key",
       "text": "step2.md"
     }],
     "intro": {
