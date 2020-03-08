@@ -4,6 +4,8 @@
 
 We'll add a user, _bob_ to Terminal 1 with the `adduser` command.
 
+**Click on the code snippet below to execute it on Terminal Host 1**
+
 `adduser bob`{{execute T1}}
 
 **Click in the Terminal Host 1 window to the right**
