@@ -10,7 +10,7 @@ We'll add a user, _bob_ to Terminal 1 with the `adduser` command.
 
 **Click in the Terminal Host 1 window to the right.**
 
-**Provide the requested input where you see double asterisks `**` in the output as below.**
+**Provide the requested input where you see double asterisks** ** **in the output as below.**
 
 You'll see the following:
 
