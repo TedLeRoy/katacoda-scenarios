@@ -27,10 +27,6 @@
     {
       "title": "Step 6 - Permit only key-based authentication",
       "text": "step6.md"
-    },
-    {
-      "title": "Step 10 - List IP's",
-      "text": "step10.md"
     }],
     "intro": {
       "text": "intro.md",
