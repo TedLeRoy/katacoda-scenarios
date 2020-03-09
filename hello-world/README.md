@@ -44,3 +44,5 @@ The steps to configure key-based authentication are highlighted below and we'll 
 16. Understand what logs to check for any issues along the way.
 
 This sounds like a lot but we'll get through it pretty quickly!
+
+This scenario is available here: https://www.katacoda.com/theo1
