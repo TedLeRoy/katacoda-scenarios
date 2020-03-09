@@ -21,9 +21,9 @@ The authenticity of host '172.17.0.21 (172.17.0.21)' can't be established.
 ECDSA key fingerprint is SHA256:SK3U6gPvlomtsq58aKe9c+9I+Lro0A8IyEdbF6rDJ7c.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '172.17.0.21' (ECDSA) to the list of known hosts.
-Enter passphrase for key '/home/bob/.ssh/id_rsa': **Enter the password you put on your key**
+Enter passphrase for key '/home/bob/.ssh/id_rsa': **Enter the password you put on your key**`
 
-The programs included with the Ubuntu system are free software;
+`The programs included with the Ubuntu system are free software;
 the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 
