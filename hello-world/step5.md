@@ -19,7 +19,7 @@ The process should look similar to the following:
 `bob@host01:~$ ssh bob@172.17.0.21
 The authenticity of host '172.17.0.21 (172.17.0.21)' can't be established.
 ECDSA key fingerprint is SHA256:SK3U6gPvlomtsq58aKe9c+9I+Lro0A8IyEdbF6rDJ7c.
-Are you sure you want to continue connecting (yes/no)? yes
+Are you sure you want to continue connecting (yes/no)? **Type 'yes' and hit Enter**
 Warning: Permanently added '172.17.0.21' (ECDSA) to the list of known hosts.
 Enter passphrase for key '/home/bob/.ssh/id_rsa': **Enter the password you put on your key**`
 
