@@ -34,6 +34,8 @@ Ensure `ChallengeResponseAuthentication no` is set. If not, change whatever foll
 
 Change `PasswordAuthentication yes` to `PasswordAuthentication no`.
 
+**If any of the lines you're editing have a pound sign (#) in front of them remove it to uncomment the line.**
+
 Save your changes by hitting the Escape key, then typing colon followed by w then q. `:wq`.
 
 Reload the SSH service:
