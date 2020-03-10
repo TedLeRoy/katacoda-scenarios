@@ -1,6 +1,6 @@
 # SSH key-based authentication
 
-## Welcome to the SSH key-based authentication for Ubuntu 18.04 Server scenario!
+## Welcome to the SSH key-based authentication for Ubuntu Server scenario!
 
 ### Problem
 
@@ -35,7 +35,7 @@ The steps to configure key-based authentication are highlighted below and we'll 
 7. Set up directories for keys with `ssh-keygen`.
 8. Copy the key on system 1 to the _authorized_keys_ file on system 2 with `echo`.
 9. Set permissions on the _authorized_keys_ file to 600 using `chmod`.
-10. Test key-based authentication from system one to system two with `ip` and `ssh`.
+10. Test key-based authentication from system one to system two with `ssh`.
 11. Set system two so it will only accept key-based authentication by editing _/etc/ssh/sshd_config_ with `vim`.
 12. Reload the ssh service with `service`.
 13. Make sure key-based authentication from system one to system two still works with `ssh`.
