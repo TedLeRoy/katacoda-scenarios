@@ -12,7 +12,7 @@ Now, if you were connected from Terminal 1 to Terminal 2 over SSH, close that co
 
 If you made the change directly on Terminal 2, go to Terminal 1 and try to connect over SSH.
 
-`ssh bob@[[terminal2_ip]]`{{execute}}
+`ssh bob@[[HOST2_IP]]`{{execute}}
 
 You should receive an error saying no supported authentication method was found.
 
@@ -24,6 +24,6 @@ Change permissions back to the correct setting:
 
 Make sure SSH is working again.
 
-`ssh bob@[[terminal2_ip]]`{{execute}}
+`ssh bob@[[HOST2_IP]]`{{execute}}
 
 In the next lesson, we'll see common things to check if you're having any problems.
