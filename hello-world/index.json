@@ -27,6 +27,10 @@
     {
       "title": "Step 6 - Permit only key-based authentication",
       "text": "step6.md"
+    }
+    {
+      "title": "Step 7 - Be sure only key-based authentication can be used",
+      "text": "step7.md"
     }],
     "intro": {
       "text": "intro.md",
