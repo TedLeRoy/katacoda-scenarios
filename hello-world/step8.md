@@ -24,4 +24,6 @@ Be sure to use the echo command as shown. Using a text editor can introduce unwa
 
 If both of those things are set up correctly, check the entries in `/var/log/auth.log`.
 
-You may want to grep for entries starting with 
+You may want to grep for entries containing fail or the username you're trying to log in with.
+
+You've configured and tested key based authentication on Ubuntu. Great work!
