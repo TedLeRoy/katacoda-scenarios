@@ -31,6 +31,10 @@
     {
       "title": "Step 7 - Be sure only key-based authentication works",
       "text": "step7.md"
+    },
+    {
+      "title": "Step 8 - Troubleshooting and logs",
+      "text": "step8.md"
     }],
     "intro": {
       "text": "intro.md",
