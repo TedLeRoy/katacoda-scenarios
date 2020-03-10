@@ -4,9 +4,9 @@
 
 We know key based authentication works, but what if the key is broken or the user doesn't have it? How can we see that the user will not simply be promted for a password?
 
-We'll change the permissions for the authorized_keys file to a setting that won't work, then try to login to see.
+We'll change the permissions for the private key file, `id_rsa` file to a setting that won't work, then try to login to see.
 
-`sudo chmod 655 /home/bob/.ssh/authorized_keys`{{execute T2}}
+`sudo chmod 777 /home/bob/.ssh/id_rsa`{{execute T2}}
 
 Now, if you were connected from Terminal 1 to Terminal 2 over SSH, close that connection by typing `exit`.
 
@@ -20,7 +20,7 @@ That means a user without a key will not be able to try and enter a password, so
 
 Change permissions back to the correct setting:
 
-`sudo chmod 600 /home/bob/.ssh/authorized_keys`{{execute T2}}
+`sudo chmod 600 /home/bob/.ssh/id_rsa`{{execute T2}}
 
 Make sure SSH is working again.
 
