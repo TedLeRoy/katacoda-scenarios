@@ -31,7 +31,7 @@ You'll see the following output:
 >|            .... |  
 >+----[SHA256]-----+  
 
-Now, we want to copy the content of _id_rsa.pub_ on Terminal 1 to the _authorized_keys_ file in the _.ssh+ folder on this system.
+Now, we want to copy the content of _id_rsa.pub_ on Terminal 1 to the _authorized_keys_ file in the _.ssh_ folder on this system.
 
 On Terminal 1, select the text that was output when the cat command was run. It will look something like this: 
 
