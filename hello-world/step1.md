@@ -30,7 +30,7 @@ Enter the new value, or press ENTER for the default
 >        Home Phone []: `**`press Enter`**`  
 >        Other []: `**`press Enter`**`  
 Is the information correct? [Y/n] `**`press Enter`**`  
-
+>
 >Your user, _bob_ has been created on Terminal 1.
 
 ### Add privilege elevation to _bob's_ account
