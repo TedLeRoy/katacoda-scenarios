@@ -2,7 +2,7 @@
 
 ## Public/Private Key Pair Generation
 
-Running ssh-keygen will do several things for us. It will add a hidden directory to bob's home called .ssh, it will generate a public/private key pair and put them in the .ssh folder, and it will set proper permissions (700 for the directory, and 600 for the files) on those resources.
+Running _ssh-keygen_ will do several things for us. It will add a hidden directory to bob's home called _.ssh_, it will generate a public/private key pair and put them in the _.ssh_ folder, and it will set proper permissions (700 for the directory, and 600 for the files) on those resources.
 
 `ssh-keygen`{{execute T2}}
 
@@ -31,15 +31,15 @@ You'll see the following output:
 >|            .... |  
 >+----[SHA256]-----+  
 
-Now, we want to copy the content of id_rsa.pub on Terminal 1 to the authorized_keys file in the .ssh folder on this system.
+Now, we want to copy the content of _id_rsa.pub_ on Terminal 1 to the _authorized_keys_ file in the _.ssh+ folder on this system.
 
 On Terminal 1, select the text that was output when the cat command was run. It will look something like this: 
 
-`ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCostLDIrveyujCUMuJkO42ifDEG7FMhAPEKJmX8dXIUavZiccLUgnf1X9syMR7YYzWdpz9GXI62Va/z5zW8ITRaOWHsJ18h+MpDfk+9qBEeiBydLFo0rzSSJDmZTpbLVOpkQ2LYgSy0eouPtNTFRvaRLXjaQb01WCMneXMmun33w1CvNgOEWQb/d4iUO2ylKz20CvacfwctKgjROG3ZDtgv9D0S6+xCsx7gEOMVcuVxaA58NH5b9p55qNue9DNT3l4oNRPJQ5MY+HyQp3YZoTb3eesyhz+/WALyR7XQ29QhGNTu9RMkpQl/IB6YrTNHX7jpp2humRfzTzx0m1JDjgt bob@host01`
+>ssh-rsa >AAAAB3NzaC1yc2EAAAADAQABAAABAQCostLDIrveyujCUMuJkO42ifDEG7FMhAPEKJmX8dXIUavZiccLUgnf1X9syMR7YYzWdpz9GXI62Va/z5zW8ITRaOWHsJ18h+MpDfk+9qBEeiBydLFo0rzSSJDmZTpbLVOpkQ2LYgSy0eouPtNTFRvaRLXjaQb01WCMneXMmun33w1CvNgOEWQb/d4iUO2ylKz20CvacfwctKgjROG3ZDtgv9D0S6+xCsx7gEOMVcuVxaA58NH5b9p55qNue9DNT3l4oNRPJQ5MY+HyQp3YZoTb3eesyhz+/WALyR7XQ29QhGNTu9RMkpQl/IB6YrTNHX7jpp2humRfzTzx0m1JDjgt bob@host01
 
-Be sure to select everything from ssh-rsa... to ...bob@host01 inclusive.
+Be sure to select everything from `ssh-rsa...` to `...bob@host01` inclusive.
 
-Hit ctrl-c to copy your selection to your operating system's clipboard.
+Hit `ctrl-c` to copy your selection to your operating system's clipboard.
 
 Type `echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys`.
 
@@ -52,3 +52,5 @@ Now, change directory to your `.ssh` folder then change the permissions on the `
 `cd /home/bob/.ssh`{{execute T2}}
 
 `chmod 600 authorized_keys`{{execute T2}}
+
+Next, we'll make sure key-based authentication is working for _bob_ from Terminal 1 to Terminal 2.
