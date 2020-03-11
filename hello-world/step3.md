@@ -1,8 +1,8 @@
-# Creating a user, _bob_ on terminal 2.
+# Creating a user, *bob* on terminal 2.
 
-### Add user _bob_ on terminal 2.
+### Add user *bob* on terminal 2.
 
-We'll add a user, _bob_ to Terminal 2 with the `adduser` command.
+We'll add a user, *bob* to Terminal 2 with the `adduser` command.
 
 `adduser bob`{{execute T2}}
 
@@ -25,18 +25,18 @@ Enter the new value, or press ENTER for the default
 >        Other []: **press Enter**  
 Is the information correct? [Y/n] **press Enter**  
 >
->Your user, _bob_ has been created on Terminal 2.
+>Your user, *bob* has been created on Terminal 2.
 
 ### Add privilege elevation to _bob's_ account
 
-Add _bob_ to the sudo group so he can elevate privileges when needed with `usermod`.
+Add *bob* to the sudo group so he can elevate privileges when needed with `usermod`.
 
 `usermod -aG sudo bob`{{execute T2}}
 
-### Change from _root_ to _bob_
+### Change from *root* to *bob*
 
-Change from running as _root_ to run as _bob_ using the substitute user identity `su` command.
+Change from running as *root* to run as *bob* using the substitute user identity `su` command.
 
 `su - bob`{{execute T2}}
 
-In the next step, we'll create _bob's_ public/private key pair and set up his directory and file permissions on T2 with `ssh-keygen`.
+In the next step, we'll create *bob's* public/private key pair and set up his directory and file permissions on T2 with `ssh-keygen`.
