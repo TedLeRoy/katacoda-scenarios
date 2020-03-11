@@ -25,16 +25,16 @@ We'll walk through the process, step-by-step, together here.
 The steps to configure key-based authentication are highlighted below and we'll do each in this scenario:
 
 1. Create a non-root user on system one
-    1. Creatre user _bob_ with `adduser` 
+    1. Create user _bob_ with `adduser` 
     2. Add the _bob_ to the _sudo_ group with `usermod`
-    3. Switch from root to the new user with `su`
-2. Generate a key pair _bob_ on system one
+    3. Switch from root to the _bob_ with `su`
+2. Generate a key pair for _bob_ on system one
     1. Create key with `ssh-keygen`
     2. List key contents with `cat`
 3. Create a non-root user on system two 
-    1. Create user _bob_ `adduser`
+    1. Create user _bob_ with `adduser`
     2. Add the _bob_ to the _sudo_ group with `usermod`
-    3. Switch from root to the new user with `su`
+    3. Switch from root to the _bob_ with `su`
 4. Set up directories for keys with `ssh-keygen`
     1. Copy the key on system 1 to the _authorized_keys_ file on system 2 with `echo`
     2. Set permissions on the _authorized_keys_ file to 600 using `chmod`
@@ -45,7 +45,7 @@ The steps to configure key-based authentication are highlighted below and we'll 
     3. Save changes
     4. Reload ssh with `service`
     5. Be sure ssh still works
-7. Make sure password authentication no longer works by disabling your key and trying to log in.
+7. Make sure password authentication no longer works by moving the _authorized_keys_ file and trying to log in.
 8. Understand common problems and what logs to check for any issues along the way.
 
 This sounds like a lot but we'll get through it pretty quickly!
