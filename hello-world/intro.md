@@ -22,7 +22,7 @@ We'll walk through the process, step-by-step, together here.
 
 ### Scenario
 
-A user, *bob*, wants to be able to connect from one system, system 1, to a remote system, system 2, with SSH using key-based authentication.
+A user, *bob*, wants to be able to connect from one system, System 1, to a remote system, System 2, with SSH using key-based authentication.
 
 ### Discussion
 
