@@ -4,11 +4,11 @@
 
 ### Problem
 
-SSH is a secure, encrypted protocol for managing remote devices such as Linux and BSD servers and network devices like those made by Cisco and Juniper.
+SSH is a secure, encrypted protocol for managing remote devices such as Linux and BSD servers and network devices like those made by Cisco and Juniper from a command line terminal emulator.
 
 In a default installation on Linux, it uses username and password for authentication.
 
-This is a very insecure way to manage remote authentication and a better option is available to us with just a few steps.
+Usernames and passwords can be gleaned in many ways including brute force if the system is not set up proplerly or through password re-use if your credentials are compromised elsewhere. Username and password authentication is a very insecure way to manage remote authentication and a better option is available to us with just a few steps.
 
 ### Solution
 
