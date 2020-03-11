@@ -8,7 +8,7 @@ Running ssh-keygen will do several things for us. It will add a hidden directory
 
 You'll see the following output:
 
-`bob@host01:~$ ssh-keygen
+>bob@host01:~$ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/bob/.ssh/id_rsa): **Press Enter**
 Created directory '/home/bob/.ssh'.
@@ -29,7 +29,7 @@ The key's randomart image is:
 |          ...  ..|
 |          E...  .|
 |            .... |
-+----[SHA256]-----+`
++----[SHA256]-----+
 
 Now, we want to see the content of the id_rsa.pub file so we can select and copy it to system two in a later step:
 
