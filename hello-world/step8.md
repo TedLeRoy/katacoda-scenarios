@@ -20,10 +20,10 @@ If any permissions are incorrect, fix them by running `chmod`. Type `chmod 700 .
 
 2. The next thing to check is the content of the _authorized_keys_ file. It must be an exact copy of what is in the _id_rsa.pub_ file on system 1. If you suspect something's amiss, it is best to delete the file, assuming you don't have other keys in there, and try again.
 
-Be sure to use the echo command as shown. Using a text editor can introduce unwanted, sometimes invisible characters.
+Be sure to use the `echo` command as shown to dump the key content into the file. Using a text editor can introduce unwanted, sometimes invisible characters.
 
 If both of those things are set up correctly, check the entries in `/var/log/auth.log`.
 
-You may want to grep for entries containing fail or the username you're trying to log in with.
+You may want to grep for entries containing fail or the username you're trying to log in with in the _auth.log_ file.
 
 You've configured and tested key based authentication on Ubuntu. Great work!
