@@ -44,7 +44,7 @@ The steps to configure key-based authentication are highlighted below and we'll 
     2. Set permissions on the *authorized_keys* file to 600 using `chmod`
 5. Test key-based authentication from system one to system two with `ssh`
 6. Set system two so it will only accept key-based authentication 
-    1. Make a backup copy of */etc/ssh/sshd_cofnig* with `cp`
+    1. Make a backup copy of */etc/ssh/sshd_config* with `cp`
     2. Edit */etc/ssh/sshd_config* with `vim`
     3. Save changes
     4. Reload ssh with `service`
