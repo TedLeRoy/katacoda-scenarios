@@ -4,7 +4,7 @@
 
 We know key based authentication works, but what if the key is broken or the user doesn't have it? How can we see that the user will not simply be promted for a password?
 
-We'll move the *authorized_keys* file up one directory, then try to login to see.
+We'll move the *authorized_keys* file up one directory on System 2, then try to login to see.
 
 `sudo mv /home/bob/.ssh/authorized_keys ../`{{execute T2}}
 
