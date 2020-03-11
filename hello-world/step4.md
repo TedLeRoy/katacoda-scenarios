@@ -41,13 +41,13 @@ Be sure to select everything from `ssh-rsa...` to `...bob@host01` inclusive.
 
 Hit `ctrl-c` to copy your selection to your operating system's clipboard.
 
-Type `echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys`.
+Type `echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys` on **Terminal 2**.
 
 Be sure to have single quotes around the key. Do not type the less than and greater than signs between the single quotes. The only thing inside the signle quotes should be the exact content of the key generated on Terminal 1.
 
-This will create an `authorized_keys` file if it does not already exist and add the key from Terminal 1 to it, or append it to existing content if the file already exists.
+This will create an _authorized_keys_ file if it does not already exist and add the key from Terminal 1 to it, or append it to existing content if the file already exists.
 
-Now, change directory to your `.ssh` folder then change the permissions on the `authorized_keys` file to `600`.
+Now, change directory to your _.ssh_ folder then change the permissions on the _authorized_keys_ file to `600`.
 
 `cd /home/bob/.ssh`{{execute T2}}
 
