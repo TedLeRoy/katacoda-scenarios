@@ -43,6 +43,10 @@ Hit `ctrl-c` to copy your selection to your operating system's clipboard.
 
 Type `echo '<paste key here by typing ctrl-v>' >> /home/bob/.ssh/authorized_keys` on **Terminal 2**.
 
+In our example, it will look like this:
+
+`echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCostLDIrveyujCUMuJkO42ifDEG7FMhAPEKJmX8dXIUavZiccLUgnf1X9syMR7YYzWdpz9GXI62Va/z5zW8ITRaOWHsJ18h+MpDfk+9qBEeiBydLFo0rzSSJDmZTpbLVOpkQ2LYgSy0eouPtNTFRvaRLXjaQb01WCMneXMmun33w1CvNgOEWQb/d4iUO2ylKz20CvacfwctKgjROG3ZDtgv9D0S6+xCsx7gEOMVcuVxaA58NH5b9p55qNue9DNT3l4oNRPJQ5MY+HyQp3YZoTb3eesyhz+/WALyR7XQ29QhGNTu9RMkpQl/IB6YrTNHX7jpp2humRfzTzx0m1JDjgt bob@host01' >> /home/bob/.ssh/authorized_keys`
+
 Be sure to have single quotes around the key. Do not type the less than and greater than signs between the single quotes. The only thing inside the signle quotes should be the exact content of the key generated on Terminal 1.
 
 This will create an *authorized_keys* file if it does not already exist and add the key from Terminal 1 to it, or append it to existing content if the file already exists.
