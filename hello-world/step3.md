@@ -39,4 +39,4 @@ Change from running as *root* to run as *bob* using the substitute user identity
 
 `su - bob`{{execute T2}}
 
-In the next step, we'll create *bob's* public/private key pair and set up his directory and file permissions on T2 with `ssh-keygen`.
+In the next step, we'll create *bob's* public/private key pair and set up his directory and file permissions on System 2 with `ssh-keygen`.
