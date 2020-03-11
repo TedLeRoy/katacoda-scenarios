@@ -33,4 +33,4 @@ The process should look similar to the following:
 >To run a command as administrator (user "root"), use "sudo <command>".  
 >See "man sudo_root" for details.  
 
-In the next step, we'll configure the sshd_config file so the system will no longer accept password authentication.
+In the next step, we'll configure the _sshd_config_ file so the system will no longer accept password authentication.
