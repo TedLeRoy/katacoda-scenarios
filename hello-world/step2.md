@@ -2,7 +2,7 @@
 
 ## Public/Private Key Pair Generation
 
-Running _ssh-keygen_ will do several things for us. It will add a hidden directory to bob's home called _.ssh_, it will generate a public/private key pair and put them in the _.ssh_ folder, and it will set proper permissions (700 for the directory, and 600 for the files) on those resources.
+Running *ssh-keygen* will do several things for us. It will add a hidden directory to bob's home called *.ssh*, it will generate a public/private key pair and put them in the *.ssh* folder, and it will set proper permissions (700 for the directory, and 600 for the files) on those resources.
 
 `ssh-keygen`{{execute T1}}
 
@@ -31,6 +31,6 @@ You'll see the following output:
 >|            .... |  
 >+----[SHA256]-----+  
 
-Now, we want to see the content of the _id_rsa.pub_ file so we can select and copy it to system two in a later step:
+Now, we want to see the content of the *id_rsa.pub* file so we can select and copy it to system two in a later step:
 
 `cat /home/bob/.ssh/id_rsa.pub`{{execute T1}}
