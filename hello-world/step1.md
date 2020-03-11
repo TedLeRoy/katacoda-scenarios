@@ -10,7 +10,7 @@ We'll add a user, *bob* to Terminal 1 with the `adduser` command.
 
 **Click in the Terminal Host 1 window to the right.**
 
-**Provide the requested input where you see bold text in the output as below.**
+**Provide the requested input where you see bold text in the output shown below.**
 
 You'll see the following:
 
