@@ -28,4 +28,6 @@ Make sure SSH is working again.
 
 `ssh bob@[[HOST2_IP]]`{{execute}}
 
+Enter the passphrase for your SSH key when prompted.
+
 In the next lesson, we'll see common things to check if you're having any problems.
