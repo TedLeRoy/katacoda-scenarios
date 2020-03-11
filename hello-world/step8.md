@@ -14,7 +14,7 @@ Permissions on the _id_rsa_ and authorized_keys files should be 600. Check by ru
 
 The _authorized_keys_ file will be on the target system, Terminal 2 in our case.
 
-Permissions on the _id_rsa.pub_ file should be 600. Check by running `stat -c "%a %n" /home/bob/.ssh/id_rsa.pub`{{execute T1}}
+Permissions on the _id_rsa.pub_ file should be 644. Check by running `stat -c "%a %n" /home/bob/.ssh/id_rsa.pub`{{execute T1}}
 
 If any permissions are incorrect, fix them by running `chmod`. Type `chmod 700 .ssh` to set the permissions on the .ssh folder to 700 for example.
 
