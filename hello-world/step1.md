@@ -19,8 +19,8 @@ Adding new group 'bob' (1001) ...<br>
 Adding new user 'bob' (1001) with group 'bob' ...  
 Creating home directory '/home/bob' ...  
 Copying files from '/etc/skel' ...  
->`Enter new UNIX password: `**`enter your password`**`  
->`Retype new UNIX password: `**`repeat your password`**`  
+`Enter new UNIX password: `**`enter your password`**``  
+`Retype new UNIX password: `**`repeat your password`**``  
 passwd: password updated successfully  
 Changing the user information for bob  
 Enter the new value, or press ENTER for the default  
