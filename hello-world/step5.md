@@ -27,8 +27,7 @@ The process should look similar to the following:
 >the exact distribution terms for each program are described in the  
 >individual files in /usr/share/doc/*/copyright.  
 >  
->Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by  
->applicable law.  
+>Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.  
 >  
 >To run a command as administrator (user "root"), use "sudo <command>".  
 >See "man sudo_root" for details.  
