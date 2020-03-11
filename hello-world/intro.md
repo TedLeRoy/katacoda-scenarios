@@ -24,24 +24,29 @@ We'll walk through the process, step-by-step, together here.
 
 The steps to configure key-based authentication are highlighted below and we'll do each in this scenario:
 
-1. Create a non-root user on system one with `adduser`.
-2. Add the new user to the _sudo_ group with `usermod`.
-3. Switch from root to the new user with `su`.
-4. Generate a key pair for the new user with `ssh-keygen`.
-5. Print the key to the terminal or standard output with `cat`.
-6. Create a non-root user on the second system with the same username with `adduser`.
-7. Add the new user on system two to the _sudo_ group with `usermod`.
-6. Switch from root to the new user with `su`.
-7. Set up directories for keys with `ssh-keygen`.
-8. Copy the key on system 1 to the _authorized_keys_ file on system 2 with `echo`.
-9. Set permissions on the _authorized_keys_ file to 600 using `chmod`.
-10. Test key-based authentication from system one to system two with `ssh`.
-11. Set system two so it will only accept key-based authentication by editing _/etc/ssh/sshd_config_ with `vim`.
-12. Reload the ssh service with `service`.
-13. Make sure key-based authentication from system one to system two still works with `ssh`.
-14. Make sure privilege elevation still works with `sudo`.
-15. Make sure password authentication no longer works by disabling your key and trying to log in.
-16. Understand what logs to check for any issues along the way.
+1. Create a non-root user on system one
+    1. Creatre user _bob_ with `adduser` 
+    2. Add the _bob_ to the _sudo_ group with `usermod`
+    3. Switch from root to the new user with `su`
+2. Generate a key pair _bob_ on system one
+    1. Create key with `ssh-keygen`
+    2. List key contents with `cat`
+3. Create a non-root user on system two 
+    1. Create user _bob_ `adduser`
+    2. Add the _bob_ to the _sudo_ group with `usermod`
+    3. Switch from root to the new user with `su`
+4. Set up directories for keys with `ssh-keygen`
+    1. Copy the key on system 1 to the _authorized_keys_ file on system 2 with `echo`
+    2. Set permissions on the _authorized_keys_ file to 600 using `chmod`
+5. Test key-based authentication from system one to system two with `ssh`
+6. Set system two so it will only accept key-based authentication 
+    1. Make a backup copy of /etc/ssh/sshd_cofnig_ with cp
+    2. Edit _/etc/ssh/sshd_config_ with `vim`
+    3. Save changes
+    4. Reload ssh with `service`
+    5. Be sure ssh still works
+7. Make sure password authentication no longer works by disabling your key and trying to log in.
+8. Understand common problems and what logs to check for any issues along the way.
 
 This sounds like a lot but we'll get through it pretty quickly!
 
