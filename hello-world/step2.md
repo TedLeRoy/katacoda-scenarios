@@ -10,10 +10,10 @@ You'll see the following output:
 
 >bob@host01:~$ ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/bob/.ssh/id_rsa): **Press Enter**
+>Enter file in which to save the key (/home/bob/.ssh/id_rsa): **Press Enter**
 Created directory '/home/bob/.ssh'.
-Enter passphrase (empty for no passphrase): **Enter passphrase**
-Enter same passphrase again: **Enter passphrase**
+>Enter passphrase (empty for no passphrase): **Enter passphrase**
+>Enter same passphrase again: **Enter passphrase**
 Your identification has been saved in /home/bob/.ssh/id_rsa.
 Your public key has been saved in /home/bob/.ssh/id_rsa.pub.
 The key fingerprint is:
