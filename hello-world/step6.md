@@ -1,16 +1,16 @@
 # Eliminate Password Authentication for SSH.
 
-## Edit /etc/ssh/sshd_config to only allow key-based authentication.
+## Edit */etc/ssh/sshd_config* to only allow key-based authentication.
 
-Now we'll make a copy of the original _sshd_config_ file, then edit the original to disallow password authentication.
+Now we'll make a copy of the original *sshd_config* file, then edit the original to disallow password authentication.
 
-Copy the _/etc/ssh/sshd_config_ file to a backup file so you'll have it if you need to restore it:
+Copy the */etc/ssh/sshd_config* file to a backup file so you'll have it if you need to restore it:
 
 `sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.0`{{execute T2}}
 
-If prompted for a password, enter bob's Terminal 2 password to confirm that you have sudo privileges.
+If prompted for a password, enter *bob's* Terminal 2 password to confirm that you have sudo privileges.
 
-Edit the original _/etc/ssh/sshd_config_ file with vim:
+Edit the original */etc/ssh/sshd_config* file with vim:
 
 `sudo vim /etc/ssh/sshd_config`{{execute T2}}
 
